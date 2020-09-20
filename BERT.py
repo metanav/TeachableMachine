@@ -18,7 +18,7 @@ class BERT():
     
         log.info("Initializing Inference Engine")
         ie = IECore()
-        #ie.set_config({'VPU_HW_STAGES_OPTIMIZATION': 'NO'}, "MYRIAD")
+        ie.set_config({'VPU_HW_STAGES_OPTIMIZATION': 'NO'}, "MYRIAD")
         version = ie.get_versions(device)[device]
         version_str = "{}.{}.{}".format(version.major, version.minor, version.build_number)
         log.info("Plugin version is {}".format(version_str))

@@ -1,0 +1,10 @@
+deepspeech==0.8.2
+pytesseract==0.3.6
+picamera==1.13
+PyAudio==0.2.11
+RPi.GPIO==0.7.0
+scipy==1.5.2
+spidev==3.5
+webrtcvad==2.0.10
+halo==0.0.30
+numpy==1.19.2
