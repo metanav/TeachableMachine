@@ -7,7 +7,7 @@ from VADAudio import VADAudio
 from DeepSpeech import DeepSpeech
 from BERT import BERT
 
-# Text to speech using flite (a lite version of festival)
+# Text to speech using festival
 def tts(text):
     cmd = 'echo "{}" | festival  --tts'.format(text)
     p   = Popen(cmd, stderr=PIPE, stdout=PIPE, shell=True)
